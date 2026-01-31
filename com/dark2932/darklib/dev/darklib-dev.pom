@@ -7,7 +7,7 @@
 
     <groupId>com.dark2932</groupId>
     <artifactId>darklib</artifactId>
-    <version>0-dev</version>
+    <version>dev</version>
     <packaging>jar</packaging>
 
     <name>DarkLib</name>

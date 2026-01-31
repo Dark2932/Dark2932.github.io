@@ -3,10 +3,10 @@
   <groupId>com.dark2932</groupId>
   <artifactId>darklib</artifactId>
   <versioning>
-    <latest>0-dev</latest>
-    <release>0-dev</release>
+    <latest>dev</latest>
+    <release>dev</release>
     <versions>
-      <version>0-dev</version>
+      <version>dev</version>
     </versions>
   </versioning>
 </metadata>
