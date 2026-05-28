@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>文档中心 - Dark2932's Blog</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Marked.js for rendering Markdown -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-brand">
+            <a href="index.html">Dark2932's Blog</a>
+        </div>
+        <div class="nav-links">
+            <a href="index.html">首页</a>
+            <a href="docs.html" class="active">文档中心</a>
+        </div>
+    </nav>
+    
+    <div class="docs-container">
+        <!-- 侧边栏：文档目录 -->
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <h3>📁 文档目录</h3>
+                <button class="sidebar-toggle" id="sidebarToggle">☰</button>
+            </div>
+            <div class="sidebar-content" id="sidebarContent">
+                <!-- 动态生成的目录内容 -->
+            </div>
+        </aside>
+        
+        <!-- 主内容区 -->
+        <main class="main-content">
+            <!-- 文档列表视图 -->
+            <div id="docListView" class="view active">
+                <div class="view-header">
+                    <h1>📚 文档中心</h1>
+                    <p>选择一个文档分类开始阅读</p>
+                </div>
+                <div class="doc-grid" id="docGrid">
+                    <!-- 动态生成的文档卡片 -->
+                </div>
+            </div>
+            
+            <!-- 文档详情视图 -->
+            <div id="docDetailView" class="view">
+                <div class="view-header">
+                    <button class="back-btn" id="backBtn">← 返回列表</button>
+                    <h1 id="docTitle"></h1>
+                </div>
+                <div class="doc-content" id="docContent">
+                    <!-- 动态加载的文档内容 -->
+                </div>
+            </div>
+        </main>
+    </div>
+    
+    <script src="js/docs.js"></script>
+</body>
+</html>
